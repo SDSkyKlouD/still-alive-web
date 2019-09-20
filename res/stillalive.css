@@ -1,0 +1,122 @@
+::selection {
+	background: rgba(0, 0, 0, 0);
+}
+
+::-moz-selection {
+	background: rgba(0, 0, 0, 0);
+}
+
+html {
+	overflow: auto;
+	margin: 0;
+	transform-origin: left top;
+}
+
+body {
+	margin: 0.25em;
+}
+
+html, body {
+	width: fit-content;
+	height: fit-content;
+	background-color: black;
+	color: #DEBE5F;
+	font-family: "Courier New", "Courier", "CourierPrimeSans", monospace !important;
+	font-weight: 600;
+}
+
+span {
+	display: inline-block;
+	line-height: 1.35;
+	font-size: 1em;
+}
+
+pre {
+	font-family: "Courier New", "Courier", "CourierPrimeSans", monospace !important;
+	line-height: 1.3;
+	margin: 0;
+
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+a {
+    text-decoration: underline;
+    color: currentColor;
+}
+
+.container_lyrics, .container_lyrics_before_loading, .container_lyrics_before_mobile {
+	display: none;
+	position: absolute;
+	width: 26.75em;
+	height: 39em;
+	top: calc(0.8em + 0.25em);
+	left: calc(0.7em + 0.25em);
+}
+
+.container_lyrics_before_loading {
+	display: block;
+}
+
+.container_lyrics.current {
+	display: block;
+}
+
+.container_lyrics.current>br {
+	display: none;
+}
+
+.container_credits {
+	display: block;
+	position: absolute;
+	width: 28.75em;
+	height: 21em;
+	top: calc(1em + 0.25em);
+	left: 29.5em;
+}
+
+.container_credits>span.row:empty:before {
+  content: "\200b";
+}
+
+.container_asciiart {
+	display: block;
+	position: absolute;
+	left: 38em;
+	top: 26.5em;
+	font-size: 14px;
+}
+
+.container_asciiart>pre {
+	display: none;
+	line-height: 1.2;
+}
+
+.container_asciiart>pre.display {
+	display: block !important;
+}
+
+br.force-display {
+	display: inline !important;
+}
+
+.container_sns {
+	margin-top: 0.5em;
+	margin-left: 0.5em;
+}
+
+.container_sns>* {
+	display: inline-flex !important;
+}
+
+.gettingfaster {
+	cursor: progress !important;
+}
+
+.gettingfasterandfaster {
+	cursor: wait !important;
+}
