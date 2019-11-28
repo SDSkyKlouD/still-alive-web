@@ -113,6 +113,10 @@ br.force-display {
 	display: inline-flex !important;
 }
 
+.container_sns img {
+	width: 25px;
+}
+
 .gettingfaster {
 	cursor: progress !important;
 }
